@@ -1,51 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import Expenses from './components/Expense';
-import TotalAmount from './components/TotalAmount';
+import AddUser from './components/Users/AddUser';
+import UsersList from './components/Users/UsersList';
 
-const App = () => {
-  const expenses = [
-    {
-      id: 'e1',
-      title: 'MallShopping',
-      amount: 15090,
-      date: new Date(2020, 7, 14),
-      location : 'Delhi'
-    },
-    { id: 'e2', 
-     title: 'New TV', 
-     amount: 7997.50, 
-     date: new Date(2021, 2, 12) ,
-     location:'Indrapuri'
-    },
-    {
-      id: 'e3',
-      title: 'FoodNight',
-      amount: 2982,
-      date: new Date(2021, 2, 28),
-      location : 'Saket Nagar'
-    },
-    {
-      id: 'e4',
-      title: 'New Desk (Wooden)',
-      amount: 450,
-      date: new Date(2021, 5, 12),
-      location : 'Saket Nagar'
-    },
-  ];
+function App() {
+  const [usersList, setUsersList] = useState([]);
 
-  // return React.createElement(
-  //   'div',
-  //   {},
-  //   React.createElement('h2', {}, "Let's get started!"),
-  //   React.createElement(Expenses, { items: expenses })
-  // );
+  const addUserHandler = (uName, uAge) => {
+    setUsersList((prevUsersList) => {
+      return [
+        ...prevUsersList,
+        { name: uName, age: uAge, id: Math.random().toString() },
+      ];
+    });
+  };
 
   return (
     <div>
-      <h2>Expense Tracker</h2>
-      <h3>Total Amount :$<TotalAmount expenses={expenses} /></h3>
-      <Expenses items={expenses} />
+      <AddUser onAddUser={addUserHandler} />
+      <UsersList users={usersList} />
     </div>
   );
 }
