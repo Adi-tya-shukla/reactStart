@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color:#dac9c9;
+  margin: 0;
+  overflow-y: auto;
+}
