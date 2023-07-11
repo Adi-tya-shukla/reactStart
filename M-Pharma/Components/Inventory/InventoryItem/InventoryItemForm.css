@@ -1,0 +1,35 @@
+.form-cart {
+  text-align: right;
+}
+
+.form-cart button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #8a2b06;
+  border: 1px solid #8a2b06;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.form-cart button:hover,
+.form-car button:active {
+  background-color: #641e03;
+  border-color: #641e03;}
+
+.stockBtn{
+  background-color: #f52c08a2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor:not-allowed;
+  margin-top: 40px;
+  margin-right: 50px;
+  }
+
+.stockBtn:hover{
+  background-color: #a54343;
+  border-color: rgb(148, 108, 92);
+}

@@ -1,0 +1,50 @@
+.button {
+  color: #fff;
+  background-color: #048bf1f5;
+  border: none;
+  margin-left: 2pc;
+  padding: 8px 4pc;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button.invalid {
+  background-color: #848484;
+  cursor: not-allowed;
+}
+
+.removebtn {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.removebtn:hover {
+  background-color: #cc0000;
+}
+
+.removebtn:active {
+  background-color: #990000;
+}
