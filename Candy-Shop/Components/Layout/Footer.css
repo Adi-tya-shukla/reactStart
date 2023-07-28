@@ -1,0 +1,24 @@
+footer{
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #ce5555;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; 
+    height: 4pc;
+  }
+  
+  
+  p {
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  

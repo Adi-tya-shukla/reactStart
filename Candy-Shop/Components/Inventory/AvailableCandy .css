@@ -1,0 +1,25 @@
+.candy {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    margin-bottom: 10pc;
+    animation: meals-appear 1s ease-out forwards;
+  }
+  
+  .candy ul {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  @keyframes candy-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
